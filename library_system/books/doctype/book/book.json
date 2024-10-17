@@ -1,0 +1,135 @@
+{
+    "actions": [],
+    "allow_guest_to_view": 1,
+    "autoname": "format:{book_title} by {book_author}",
+    "creation": "2024-10-14 14:50:17.165944",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+     "book_details_section",
+     "book_name",
+     "book_series",
+     "book_description",
+     "column_break_fjwq",
+     "book_title",
+     "book_author",
+     "book_price",
+     "isbn",
+     "published",
+     "route",
+     "copies_and_editions_section",
+     "table_xatf"
+    ],
+    "fields": [
+     {
+      "fieldname": "book_name",
+      "fieldtype": "Data",
+      "label": "Book Name",
+      "read_only": 1,
+      "unique": 1
+     },
+     {
+      "fieldname": "book_title",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Book Title",
+      "reqd": 1
+     },
+     {
+      "fieldname": "column_break_fjwq",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "book_series",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Book Series",
+      "options": "Book Series"
+     },
+     {
+      "fieldname": "book_author",
+      "fieldtype": "Data",
+      "label": "Book Author",
+      "reqd": 1
+     },
+     {
+      "description": "16 Digit Book Identifier",
+      "fieldname": "isbn",
+      "fieldtype": "Data",
+      "label": "ISBN",
+      "non_negative": 1,
+      "reqd": 1
+     },
+     {
+      "fieldname": "book_description",
+      "fieldtype": "Small Text",
+      "label": "Book Description"
+     },
+     {
+      "fieldname": "book_price",
+      "fieldtype": "Currency",
+      "label": "Borrow Price",
+      "non_negative": 1,
+      "options": "currency",
+      "precision": "2",
+      "reqd": 1
+     },
+     {
+      "fieldname": "book_details_section",
+      "fieldtype": "Section Break",
+      "label": "Book Details"
+     },
+     {
+      "fieldname": "copies_and_editions_section",
+      "fieldtype": "Section Break",
+      "label": "Copies and Editions"
+     },
+     {
+      "fieldname": "table_xatf",
+      "fieldtype": "Table",
+      "label": "Editions",
+      "options": "Book Copy"
+     },
+     {
+      "default": "0",
+      "fieldname": "published",
+      "fieldtype": "Check",
+      "label": "Published?"
+     },
+     {
+      "fieldname": "route",
+      "fieldtype": "Data",
+      "hidden": 1,
+      "label": "Route"
+     }
+    ],
+    "has_web_view": 1,
+    "index_web_pages_for_search": 1,
+    "is_published_field": "published",
+    "links": [],
+    "modified": "2024-10-16 14:18:49.653920",
+    "modified_by": "Administrator",
+    "module": "Books",
+    "name": "Book",
+    "naming_rule": "Expression",
+    "owner": "Administrator",
+    "permissions": [
+     {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+     }
+    ],
+    "route": "book",
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "track_changes": 1
+   }
