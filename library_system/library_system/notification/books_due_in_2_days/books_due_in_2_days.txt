@@ -1,0 +1,13 @@
+Dear {{ doc.full_name }},
+
+Your return date, {{ doc.return_date }}, is in 48 hours.
+You will pay an extra {{ doc.late_fees }} if you do not return the books on time.
+
+You have loaned {{ doc.total_books }} books in total.
+The books' loan deposit is {{ doc.total_loan_deposit }}.
+The total price including the late fee will be {{ doc.total_price }} in 48 hours.
+This is a final reminder and after 48 hours, The Library will deduct the extra fees from your bank account.
+
+Yours Sincerely,
+
+The Library

@@ -1,0 +1,32 @@
+{
+    "attach_print": 0,
+    "channel": "Email",
+    "creation": "2024-10-16 12:42:19.534681",
+    "date_changed": "return_date",
+    "days_in_advance": 2,
+    "docstatus": 0,
+    "doctype": "Notification",
+    "document_type": "Book Loan",
+    "enabled": 1,
+    "event": "Days Before",
+    "idx": 0,
+    "is_standard": 1,
+    "message": "Dear {{ doc.full_name }},\n\nYour return date, {{ doc.return_date }}, is in 48 hours.\nYou will pay an extra {{ doc.late_fees }} if you do not return the books on time.\n\nYou have loaned {{ doc.total_books }} books in total.\nThe books' loan deposit is {{ doc.total_loan_deposit }}.\nThe total price including the late fee will be {{ doc.total_price }} in 48 hours.\nThis is a final reminder and after 48 hours, The Library will deduct the extra fees from your bank account.\n\nYours Sincerely,\n\nThe Library\n",
+    "message_type": "Plain Text",
+    "modified": "2024-10-16 12:42:19.534681",
+    "modified_by": "Administrator",
+    "module": "Library System",
+    "name": "Books due in 2 days",
+    "owner": "Administrator",
+    "recipients": [
+     {
+      "receiver_by_document_field": "email_address",
+      "receiver_by_role": ""
+     }
+    ],
+    "send_system_notification": 1,
+    "send_to_all_assignees": 0,
+    "sender": "",
+    "sender_email": "",
+    "subject": "Books' return date in 48 hours"
+   }
