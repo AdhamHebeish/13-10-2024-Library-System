@@ -1,0 +1,62 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "format:{parent}-{year_of_publish}, {book_edition}",
+    "creation": "2024-10-14 16:31:03.423524",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+     "book_edition",
+     "writer",
+     "column_break_heuy",
+     "illustrator",
+     "year_of_publish"
+    ],
+    "fields": [
+     {
+      "fieldname": "book_edition",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Book Edition",
+      "reqd": 1
+     },
+     {
+      "fieldname": "writer",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Writer",
+      "reqd": 1
+     },
+     {
+      "fieldname": "column_break_heuy",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "illustrator",
+      "fieldtype": "Data",
+      "label": "Illustrator"
+     },
+     {
+      "fieldname": "year_of_publish",
+      "fieldtype": "Int",
+      "in_list_view": 1,
+      "label": "Year of Publish",
+      "non_negative": 1,
+      "reqd": 1
+     }
+    ],
+    "index_web_pages_for_search": 1,
+    "istable": 1,
+    "links": [],
+    "modified": "2024-10-14 23:47:40.834266",
+    "modified_by": "Administrator",
+    "module": "Books",
+    "name": "Book Copy",
+    "naming_rule": "Expression",
+    "owner": "Administrator",
+    "permissions": [],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+   }

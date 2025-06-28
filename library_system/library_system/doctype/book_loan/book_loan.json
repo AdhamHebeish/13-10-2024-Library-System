@@ -1,0 +1,219 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "format:Book Loan {email_address}, {return_date}",
+    "creation": "2024-10-15 15:13:35.146898",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+     "section_break_mhta",
+     "full_name",
+     "phone_number",
+     "amended_from",
+     "column_break_tjvj",
+     "email_address",
+     "address",
+     "postal_code",
+     "loaned_books_section",
+     "books",
+     "payment_section",
+     "cardholder_name",
+     "card_number",
+     "column_break_khya",
+     "expiry_date",
+     "cvv",
+     "price_and_return_date_section",
+     "loan_date",
+     "total_books",
+     "late_fees",
+     "column_break_pfkp",
+     "return_date",
+     "total_loan_deposit",
+     "total_price"
+    ],
+    "fields": [
+     {
+      "fieldname": "section_break_mhta",
+      "fieldtype": "Section Break",
+      "label": "Personal Details"
+     },
+     {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "no_copy": 1,
+      "options": "Book Loan",
+      "print_hide": 1,
+      "read_only": 1,
+      "search_index": 1
+     },
+     {
+      "fieldname": "phone_number",
+      "fieldtype": "Phone",
+      "in_list_view": 1,
+      "label": "Phone Number",
+      "reqd": 1
+     },
+     {
+      "fieldname": "column_break_tjvj",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "email_address",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Email Address",
+      "options": "Email",
+      "reqd": 1
+     },
+     {
+      "fieldname": "address",
+      "fieldtype": "Data",
+      "label": "Address",
+      "reqd": 1
+     },
+     {
+      "fieldname": "loaned_books_section",
+      "fieldtype": "Section Break",
+      "label": "Loaned Books"
+     },
+     {
+      "fieldname": "books",
+      "fieldtype": "Table",
+      "label": "Books",
+      "options": "Book Loan Receipt",
+      "reqd": 1
+     },
+     {
+      "fieldname": "payment_section",
+      "fieldtype": "Section Break",
+      "label": "Payment Inforamtion"
+     },
+     {
+      "fieldname": "cardholder_name",
+      "fieldtype": "Data",
+      "label": "Cardholder Name",
+      "options": "Name"
+     },
+     {
+      "fieldname": "column_break_khya",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "expiry_date",
+      "fieldtype": "Date",
+      "label": "Expiry Date",
+      "reqd": 1
+     },
+     {
+      "fieldname": "card_number",
+      "fieldtype": "Data",
+      "label": "Card Number",
+      "reqd": 1
+     },
+     {
+      "fieldname": "cvv",
+      "fieldtype": "Int",
+      "label": "CVV",
+      "non_negative": 1,
+      "reqd": 1
+     },
+     {
+      "default": "0",
+      "fieldname": "total_loan_deposit",
+      "fieldtype": "Currency",
+      "label": "Total Loan Deposit",
+      "non_negative": 1,
+      "precision": "2",
+      "read_only": 1
+     },
+     {
+      "default": "0",
+      "fieldname": "late_fees",
+      "fieldtype": "Currency",
+      "label": "Late Fees",
+      "non_negative": 1,
+      "precision": "2",
+      "read_only": 1
+     },
+     {
+      "fieldname": "postal_code",
+      "fieldtype": "Int",
+      "label": "Postal Code",
+      "non_negative": 1,
+      "reqd": 1
+     },
+     {
+      "default": "0",
+      "fieldname": "total_books",
+      "fieldtype": "Int",
+      "label": "Total Number of Books",
+      "non_negative": 1,
+      "read_only": 1
+     },
+     {
+      "default": "0",
+      "fieldname": "total_price",
+      "fieldtype": "Currency",
+      "label": "Total Price with Fees",
+      "non_negative": 1,
+      "read_only": 1
+     },
+     {
+      "fieldname": "price_and_return_date_section",
+      "fieldtype": "Section Break",
+      "label": "Price and Return Date"
+     },
+     {
+      "description": "Return date will be after 24 days.",
+      "fieldname": "loan_date",
+      "fieldtype": "Date",
+      "label": "Loan Date",
+      "reqd": 1
+     },
+     {
+      "fieldname": "column_break_pfkp",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "return_date",
+      "fieldtype": "Date",
+      "label": "Return Date",
+      "read_only": 1
+     },
+     {
+      "fieldname": "full_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Full Name",
+      "reqd": 1
+     }
+    ],
+    "index_web_pages_for_search": 1,
+    "is_submittable": 1,
+    "links": [],
+    "modified": "2024-10-16 19:56:21.499150",
+    "modified_by": "Administrator",
+    "module": "Library System",
+    "name": "Book Loan",
+    "naming_rule": "Expression",
+    "owner": "Administrator",
+    "permissions": [
+     {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "submit": 1,
+      "write": 1
+     }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+   }

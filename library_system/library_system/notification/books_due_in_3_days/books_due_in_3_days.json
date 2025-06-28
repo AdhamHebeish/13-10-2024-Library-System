@@ -1,0 +1,29 @@
+{
+    "attach_print": 0,
+    "channel": "System Notification",
+    "creation": "2024-10-16 12:28:50.723272",
+    "date_changed": "return_date",
+    "days_in_advance": 3,
+    "docstatus": 0,
+    "doctype": "Notification",
+    "document_type": "Book Loan",
+    "enabled": 1,
+    "event": "Days Before",
+    "idx": 0,
+    "is_standard": 1,
+    "message": "Referencing {{ doc.name }}:\n\n{{ doc.full_name }}'s books are due in 72 hours.\nThe return date is {{ doc.return_date }}.\nThe customer will pay an extra {{ doc.late_fees }} if they do not return the books on time.\n\nContact Information:\n\n- Email: {{ doc.email_address }}\n- Phone Number: {{ doc.phone_number }}\n- Address: {{ doc.address }} (Postal Code: {{ doc.postal_code }} )\n\nTransactional Information:\n\n- Books Loaned: {{ doc.total_books }}\n\n- Loan: {{ doc.total_loan_deposit }}\n- Loan + Fees: {{ doc.total_price }}\n\nThe customer will be notified after 24 hours of the sending of this message.\n",
+    "message_type": "Markdown",
+    "modified": "2024-10-16 12:28:50.723272",
+    "modified_by": "Administrator",
+    "module": "Library System",
+    "name": "Books Due in 3 Days",
+    "owner": "Administrator",
+    "recipients": [
+     {
+      "receiver_by_role": "All"
+     }
+    ],
+    "send_system_notification": 0,
+    "send_to_all_assignees": 0,
+    "subject": "{{ doc.full_name }}'s books are due in 72 hours."
+   }
